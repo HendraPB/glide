@@ -475,3 +475,20 @@ inspired various aspects of this tool, as well.
 Aside from being catchy, "glide" is a contraction of "Go Elide". The
 idea is to compress the tasks that normally take us lots of time into a
 just a few seconds.
+
+## This Fork Includes
+
+Fixing error on export dependencies ```Unable to export dependencies to vendor directory: Error moving files: exit status 1. output: Access is denied. 0 dir(s) moved.```
+
+### How to Resolve Using This Fork
+
+```bash
+# change directory to glide source code directory
+cd $GOPATH/src/github.com/Masterminds/glide/
+
+# update source code to this fork source code
+git pull https://github.com/HendraPB/glide.git master
+
+# rebuild glide.exe using this fork source code
+go get -u
+```
